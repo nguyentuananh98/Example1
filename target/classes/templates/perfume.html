@@ -1,0 +1,15 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+<table border="1">
+    <tr>
+        <th>Id</th>
+        <th>name</th>
+        <th>price</th>
+    </tr>
+    <tr th:each ="perfumes : ${perfume}">
+        <td th:utext="${perfumes.id}">...</td>
+        <td th:utext="${perfumes.name}">...</td>
+        <td th:utext="${perfumes.price}">...</td>
+
+    </tr>
+</table>

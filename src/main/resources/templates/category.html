@@ -1,0 +1,14 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+<table border="1">
+    <tr>
+        <th>category</th>
+
+    </tr>
+    <a th:href="perfume">
+    <tr th:each ="category : ${categories}">
+        <td th:utext="${category.name}"></td>
+
+    </tr>
+    </a>
+</table>
